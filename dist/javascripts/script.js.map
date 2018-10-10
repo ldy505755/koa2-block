@@ -1,0 +1,1 @@
+{"version":3,"sources":["javascripts/script.js"],"names":[],"mappings":"66CAAA","file":"script.js","sourcesContent":["import $ from 'jquery'\n\nconsole.log(`jQuery Version: ${$.fn.jquery}`)\n"]}

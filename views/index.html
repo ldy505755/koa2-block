@@ -1,0 +1,22 @@
+{% extends layout %}
+
+{% block head %}
+<link rel="stylesheet" href="/stylesheets/style.css">
+{% endblock %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<p>Welcome to {{ title }}</p>
+<p><img src="/images/IMG_7566.jpg" alt="keyboard"></p>
+
+<h2>科技新闻</h2>
+<ul class="tech">
+  {% for val in tech %}
+  <li>
+    <a href="{{ val.link }}" target="_blank">{{ loop.index }}, {{ val.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<script type="text/javascript" src="/javascripts/script.js"></script>
+{% endblock %}
